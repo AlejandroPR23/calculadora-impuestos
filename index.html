@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora simple de impuestos para calcular el monto total a pagar con impuestos incluidos.">
+    <meta name="keywords" content="calculadora, impuestos, cálculo de impuestos, impuestos calculadora, impuestos 2025">
+    <meta name="author" content="alejandropr23">
+    <title>Calculadora de Impuestos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Impuestos</h1>
+        <form id="tax-form">
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" placeholder="Introduce el monto" required>
+            
+            <label for="tax-rate">Tasa de Impuesto (%):</label>
+            <input type="number" id="tax-rate" placeholder="Introduce la tasa de impuesto" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result">
+            <p>Total con Impuestos: <span id="total"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
